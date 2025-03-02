@@ -12,7 +12,13 @@ The following capabilities are included.
 - Retrieve Tokens (ID Token, Access Token, and Refresh Token)
 - Retrieve User Info (Details, attributes, devices)
 
+<br>
 
 ![](./demo.gif)
 
-For more details, please refer to my blog: [SwiftUI: Authentication with Amazon Cognito User Pool]()
+## Set Up
+1. Create a Amazon Cognito User Pool
+2. Set up Related IDs in [`CognitoConstants`](./CognitoDemo/CognitoConstants.swift)
+
+
+For more details, please refer to my blog: [SwiftUI: Authentication with Amazon Cognito User Pool](https://medium.com/@itsuki.enjoy/swiftui-authentication-with-amazon-cognito-user-pool-3956f4ff3e95)
