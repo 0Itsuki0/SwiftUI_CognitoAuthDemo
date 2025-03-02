@@ -9,9 +9,14 @@ import SwiftUI
 
 @main
 struct CognitoDemoApp: App {
+    @State var cognitoManager = CognitoManager()
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack() {
+                ContentView()
+                    .environment(cognitoManager)
+            }
         }
     }
 }

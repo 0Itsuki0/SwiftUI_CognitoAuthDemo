@@ -6,13 +6,35 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		9873A73B2D6EB3E100DA9E79 /* AWSCognitoIdentityProvider in Frameworks */ = {isa = PBXBuildFile; productRef = 9873A73A2D6EB3E100DA9E79 /* AWSCognitoIdentityProvider */; };
+		9873A73D2D6EB3E100DA9E79 /* AWSCognitoIdentityProviderASF in Frameworks */ = {isa = PBXBuildFile; productRef = 9873A73C2D6EB3E100DA9E79 /* AWSCognitoIdentityProviderASF */; };
+		9873A73F2D6EB3E100DA9E79 /* AWSCore in Frameworks */ = {isa = PBXBuildFile; productRef = 9873A73E2D6EB3E100DA9E79 /* AWSCore */; };
+		9873A75C2D72906600DA9E79 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9873A75B2D72906600DA9E79 /* README.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		9873A7172D6E9BF400DA9E79 /* CognitoDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CognitoDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9873A75B2D72906600DA9E79 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9873A75D2D72906E00DA9E79 /* demo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = demo.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		9873A7492D6EC59E00DA9E79 /* Exceptions for "CognitoDemo" folder in "CognitoDemo" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 9873A7162D6E9BF400DA9E79 /* CognitoDemo */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		9873A7192D6E9BF400DA9E79 /* CognitoDemo */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				9873A7492D6EC59E00DA9E79 /* Exceptions for "CognitoDemo" folder in "CognitoDemo" target */,
+			);
 			path = CognitoDemo;
 			sourceTree = "<group>";
 		};
@@ -23,6 +45,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9873A73D2D6EB3E100DA9E79 /* AWSCognitoIdentityProviderASF in Frameworks */,
+				9873A73B2D6EB3E100DA9E79 /* AWSCognitoIdentityProvider in Frameworks */,
+				9873A73F2D6EB3E100DA9E79 /* AWSCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,7 +57,10 @@
 		9873A70E2D6E9BF400DA9E79 = {
 			isa = PBXGroup;
 			children = (
+				9873A75B2D72906600DA9E79 /* README.md */,
+				9873A75D2D72906E00DA9E79 /* demo.gif */,
 				9873A7192D6E9BF400DA9E79 /* CognitoDemo */,
+				9873A7402D6EB40B00DA9E79 /* Frameworks */,
 				9873A7182D6E9BF400DA9E79 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +71,13 @@
 				9873A7172D6E9BF400DA9E79 /* CognitoDemo.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		9873A7402D6EB40B00DA9E79 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -65,6 +100,12 @@
 			);
 			name = CognitoDemo;
 			packageProductDependencies = (
+				9873A7362D6EB3E100DA9E79 /* AWSAuthCore */,
+				9873A7382D6EB3E100DA9E79 /* AWSCognitoAuth */,
+				9873A73A2D6EB3E100DA9E79 /* AWSCognitoIdentityProvider */,
+				9873A73C2D6EB3E100DA9E79 /* AWSCognitoIdentityProviderASF */,
+				9873A73E2D6EB3E100DA9E79 /* AWSCore */,
+				9873A7432D6EB47900DA9E79 /* AWSUserPoolsSignIn */,
 			);
 			productName = CognitoDemo;
 			productReference = 9873A7172D6E9BF400DA9E79 /* CognitoDemo.app */;
@@ -94,6 +135,9 @@
 			);
 			mainGroup = 9873A70E2D6E9BF400DA9E79;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				9873A7352D6EB3E100DA9E79 /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 9873A7182D6E9BF400DA9E79 /* Products */;
 			projectDirPath = "";
@@ -109,6 +153,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9873A75C2D72906600DA9E79 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +299,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"CognitoDemo/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CognitoDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -282,6 +328,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"CognitoDemo/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CognitoDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -322,6 +369,50 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9873A7352D6EB3E100DA9E79 /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aws-amplify/aws-sdk-ios-spm";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.40.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9873A7362D6EB3E100DA9E79 /* AWSAuthCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9873A7352D6EB3E100DA9E79 /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			productName = AWSAuthCore;
+		};
+		9873A7382D6EB3E100DA9E79 /* AWSCognitoAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9873A7352D6EB3E100DA9E79 /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			productName = AWSCognitoAuth;
+		};
+		9873A73A2D6EB3E100DA9E79 /* AWSCognitoIdentityProvider */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9873A7352D6EB3E100DA9E79 /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			productName = AWSCognitoIdentityProvider;
+		};
+		9873A73C2D6EB3E100DA9E79 /* AWSCognitoIdentityProviderASF */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9873A7352D6EB3E100DA9E79 /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			productName = AWSCognitoIdentityProviderASF;
+		};
+		9873A73E2D6EB3E100DA9E79 /* AWSCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9873A7352D6EB3E100DA9E79 /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			productName = AWSCore;
+		};
+		9873A7432D6EB47900DA9E79 /* AWSUserPoolsSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9873A7352D6EB3E100DA9E79 /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			productName = AWSUserPoolsSignIn;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9873A70F2D6E9BF400DA9E79 /* Project object */;
 }
